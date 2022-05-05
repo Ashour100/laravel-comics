@@ -3,7 +3,9 @@
 @import 'partials/common';
 @import'~bootstrap/dist/css/bootstrap.css';
 
-
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 .header{
     height: 13vh;
     .contentContainer{
@@ -65,8 +67,8 @@
     }
     .title{
         position: absolute;
-        top: 18.7rem;
-        left: 10.8rem;
+        top: 16.9rem;
+        left: 9.8rem;
     }
     a{
         width: calc(100% / 6 - 1.3rem);

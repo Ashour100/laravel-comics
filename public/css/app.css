@@ -11293,6 +11293,10 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 .header {
   height: 13vh;
 }
@@ -11351,8 +11355,8 @@ textarea.form-control-lg {
 }
 .comics .title {
   position: absolute;
-  top: 18.7rem;
-  left: 10.8rem;
+  top: 16.9rem;
+  left: 9.8rem;
 }
 .comics a {
   width: calc(16.6666666667% - 1.3rem);
