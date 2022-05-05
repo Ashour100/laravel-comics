@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.base');
-});
+Route::get('/comics', function () {
+    $comics=config('comics');
+    return view('guest.comics', ["comics" => $comics]);
+})->name('comics');

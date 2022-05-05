@@ -11296,7 +11296,6 @@ textarea.form-control-lg {
 .header {
   height: 13vh;
 }
-
 .header .contentContainer {
   display: flex;
   align-items: center;
@@ -11311,13 +11310,11 @@ textarea.form-control-lg {
 .header-nav {
   height: 100%;
 }
-
 .header-nav ul {
   height: 100%;
   margin: 0;
   display: flex;
 }
-
 .header-nav ul li {
   list-style: none;
   padding: 0 0.7rem;
@@ -11325,7 +11322,6 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
 }
-
 .header-nav ul li a {
   text-decoration: none;
   color: #303030;
@@ -11336,33 +11332,59 @@ textarea.form-control-lg {
 .active {
   border-bottom: 5px solid #0282f9;
 }
-
 .active a {
   color: #0282f9 !important;
   margin-bottom: -5px;
+}
+
+.comics {
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0;
+}
+.comics img {
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.comics .title {
+  position: absolute;
+  top: 18.7rem;
+  left: 10.8rem;
+}
+.comics .icon {
+  width: calc(16.6666666667% - 1.3rem);
+  flex-direction: column;
+}
+.comics .icon img {
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.comics .icon span {
+  font-size: small;
 }
 
 .FooterTop {
   height: 18vh;
   background-color: #0282f9;
 }
-
 .FooterTop .contentContainer {
   padding: 0 5rem;
 }
-
 .FooterTop .icon {
   gap: 1rem;
 }
-
 .FooterTop .icon #locator {
   width: 1.5rem;
 }
-
 .FooterTop .icon img {
   width: 2.27rem;
 }
-
 .FooterTop .icon span {
   color: white;
   font-size: 0.71rem;
@@ -11370,9 +11392,8 @@ textarea.form-control-lg {
 
 .FooterMiddle {
   height: 40vh;
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url("../img/footer-bg.jpg");
 }
-
 .FooterMiddle .left {
   color: white;
   flex-wrap: wrap;
@@ -11381,28 +11402,23 @@ textarea.form-control-lg {
   text-align: start;
   padding-top: 2rem;
 }
-
 .FooterMiddle .left h5 {
   font-weight: 600;
   font-size: 0.9rem;
 }
-
 .FooterMiddle .left ul {
   padding-left: 0;
   margin-bottom: 0.1rem;
   font-size: 0.6rem;
   color: gray;
 }
-
 .FooterMiddle .left li {
   list-style: none;
 }
-
 .FooterMiddle .left .shop-list {
   position: relative;
   bottom: 3rem;
 }
-
 .FooterMiddle .right {
   display: none;
 }
@@ -11411,7 +11427,6 @@ textarea.form-control-lg {
   height: 13vh;
   background-color: #303030;
 }
-
 .FooterBottom button {
   background-color: #303030;
   color: white;
@@ -11420,20 +11435,16 @@ textarea.form-control-lg {
   font-weight: 600;
   font-size: 0.8rem;
 }
-
 .FooterBottom .socials {
   gap: 1rem;
 }
-
 .FooterBottom .socials img {
   width: 1.8rem;
   cursor: pointer;
 }
-
 .FooterBottom .socials h3 {
   color: #0282f9;
   margin: 0;
   font-weight: 700;
   font-size: 1rem;
 }
-
