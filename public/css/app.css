@@ -11354,18 +11354,22 @@ textarea.form-control-lg {
   top: 18.7rem;
   left: 10.8rem;
 }
-.comics .icon {
+.comics a {
   width: calc(16.6666666667% - 1.3rem);
-  flex-direction: column;
+  text-decoration: none;
 }
-.comics .icon img {
+.comics a .icon {
+  flex-direction: column;
+  color: white;
+}
+.comics a .icon img {
   height: 10rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
 }
-.comics .icon span {
+.comics a .icon span {
   font-size: small;
 }
 

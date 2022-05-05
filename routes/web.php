@@ -17,3 +17,11 @@ Route::get('/comics', function () {
     $comics=config('comics');
     return view('guest.comics', ["comics" => $comics]);
 })->name('comics');
+
+Route::get('/comics/{key}', function ($key) {
+    $comics=config('comics');
+    if( is_numeric($key) && $key >= 0 && $key < count($comics)){
+    return view('guest.singleComic', ["comic" => $comics[$key]]);
+    }else
+        abort(404);
+})->name('singleComic');

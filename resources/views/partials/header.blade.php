@@ -5,28 +5,33 @@
         </div>
         <div class="header-nav">
             <ul>
-                <li>
-                    <a href="">
+                <li
+                class="{{Route::currentRouteName()=='characters' ? 'active' : ''}}">
+                    <a href="characters">
                         CHARACTERS
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li
+                class="{{Route::currentRouteName()=='comics' ? 'active' : ''}}">
+                    <a href="{{route('comics')}}">
                         COMICS
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li
+                class="{{Route::currentRouteName()=='movies' ? 'active' : ''}}">
+                    <a href="movies">
                         MOVIES
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li
+                class="{{Route::currentRouteName()=='tv' ? 'active' : ''}}">
+                    <a href="tv">
                         TV
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li
+                class="{{Route::currentRouteName()=='games' ? 'active' : ''}}">
+                    <a href="games">
                         GAMES
                     </a>
                 </li>
