@@ -7,25 +7,28 @@
 
 
 @section('main-content')
-<img class="w-100" src="../img/jumbotron.jpg" alt="">
-<img src="{{$comic['thumb']}}" alt="">
-<div class="mid-comic-section px-5">
+<div class="upper-comic-section">
+    <img class="w-100 jumbo" src="{{asset('images/jumbotron.jpg')}}" alt="">
+    <div class="blueBar"></div>
+    <img class="thumb" src="{{$comic['thumb']}}" alt="">
+</div>
+<div class="mid-comic-section mx-auto mt-5 flex gap-1">
     <div class="left">
-        <h1>{{$comic['title']}}</h1>
-        <div class="greenBar d-flex bg-success w-50 text-white p-2">
-            <div class="left w-75">
-                <span> U.S. Price: {{$comic['price']}}</span>
-                <span class="ms-auto">AVAILABLE</span>
+        <h4>{{$comic['title']}}</h4>
+        <div class="greenBar d-flex text-white p-2 mb-2">
+            <div class="left w-75 flex px-2">
+                <span><span class="opacity-75"> U.S. Price:</span> {{$comic['price']}}</span>
+                <span class="opacity-75">AVAILABLE</span>
             </div>
-            <div class="right">
-                <span>Check Availability</span>
+            <div class="right w-25 text-center">
+                <a href="">Check Availability</a>
             </div>
         </div>
-        <p class="w-50">{{$comic['description']}}</p>
-        
+        <p>{{$comic['description']}}</p>
     </div>
-    <div class="left">
-        <img src="images/adv.jpg" alt="">
+    <div class="right text-end">
+        <span class="text-secondary fw-bold">ADVERTISMENT</span>
+        <a href=""><img src="{{asset('images/addddddd.jpg')}}" alt="Ad"></a>
     </div>
 </div>
 <div class="bottom-comic-section d-flex justify-content-between gap-3 w-50 mx-auto ">

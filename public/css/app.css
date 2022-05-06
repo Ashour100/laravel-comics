@@ -11341,22 +11341,71 @@ textarea.form-control-lg {
   margin-bottom: -5px;
 }
 
-.comics {
-  background-color: #1c1c1c;
-  color: white;
-  margin: 0;
-}
-.comics img {
+.jumbo {
   height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
 }
+
+.upper-comic-section {
+  position: relative;
+}
+.upper-comic-section .blueBar {
+  height: 10vh;
+  background-color: #0282f9;
+}
+.upper-comic-section .thumb {
+  width: 150px;
+  position: absolute;
+  left: 20rem;
+  bottom: 1rem;
+  border: 1px solid white;
+}
+
+.mid-comic-section {
+  width: 54vw;
+}
+.mid-comic-section h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #264667;
+}
+.mid-comic-section .left {
+  width: 70%;
+}
+.mid-comic-section .left p {
+  font-size: 0.8rem;
+}
+.mid-comic-section .left .greenBar {
+  font-size: 0.78rem;
+  font-weight: 500;
+  background-color: #55ba59;
+}
+.mid-comic-section .left .greenBar .right {
+  border-left: 1px solid black;
+}
+.mid-comic-section .left .greenBar .right a {
+  text-decoration: none;
+  color: white;
+}
+.mid-comic-section .right {
+  width: 28%;
+}
+.mid-comic-section .right img {
+  width: 100%;
+}
+
+.comics {
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0;
+}
 .comics .title {
   position: absolute;
-  top: 16.9rem;
-  left: 9.8rem;
+  top: 18.7rem;
+  left: 10.8rem;
 }
 .comics a {
   width: calc(16.6666666667% - 1.3rem);
@@ -11400,7 +11449,7 @@ textarea.form-control-lg {
 
 .FooterMiddle {
   height: 40vh;
-  background-image: url("../img/footer-bg.jpg");
+  background-image: url("/images/footer-bg.jpg");
 }
 .FooterMiddle .left {
   color: white;

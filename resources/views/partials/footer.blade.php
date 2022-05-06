@@ -2,23 +2,23 @@
     <div class="FooterTop">
         <div class="contentContainer flex">
             <div class="icon flex">
-                <img src="images/buy-comics-digital-comics.png" alt="">
+                <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="">
                 <span>DIGITAL COMICS</span>
             </div>
             <div class="icon flex">
-                <img src="images/buy-comics-merchandise.png" alt="">
+                <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="">
                 <span>DC Merchandise</span>
             </div>
             <div class="icon flex">
-                <img src="images/buy-comics-subscriptions.png" alt="">
+                <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="">
                 <span>SUBSCRIPTION</span>
             </div>
             <div class="icon flex">
-                <img id="locator" src="images/buy-comics-shop-locator.png" alt="">
+                <img id="locator" src="{{asset('images/buy-comics-shop-locator.png')}}" alt="">
                 <span>COMIC SHOP LOCATOR</span>
             </div>
             <div class="icon flex">
-                <img src="images/buy-dc-power-visa.svg" alt="">
+                <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="">
                 <span>DC POWER VISA</span>
             </div>
         </div>
@@ -82,11 +82,11 @@
             <button>SIGN-UP NOW!</button>
             <div class="socials flex">
                 <h3>FOLLOW US</h3>
-                <img src="images/footer-facebook.png" alt="">
-                <img src="images/footer-twitter.png" alt="">
-                <img src="images/footer-youtube.png" alt="">
-                <img src="images/footer-pinterest.png" alt="">
-                <img src="images/footer-periscope.png" alt="">
+                <img src="{{asset('images/footer-facebook.png')}}" alt="">
+                <img src="{{asset('images/footer-twitter.png')}}" alt="">
+                <img src="{{asset('images/footer-youtube.png')}}" alt="">
+                <img src="{{asset('images/footer-pinterest.png')}}" alt="">
+                <img src="{{asset('images/footer-periscope.png')}}" alt="">
             </div>
         </div>
     </div>

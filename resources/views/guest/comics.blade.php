@@ -2,8 +2,8 @@
 
 @section('title','Comics')
 @section('main-content')
-<div class="comics position-relative">
-    <img class="w-100" src="images/jumbotron.jpg" alt="">
+<div class="comics position-relative text-center">
+    <img class="w-100 jumbo" src="{{asset('images/jumbotron.jpg')}}" alt="">
     <div class="px-3 py-2 bg-primary title fw-bold fs-5">CURRENT SERIES</div>
     <div class="contentContainer mx-auto d-flex flex-wrap gap-4 my-5">
         @foreach ($comics as $key=> $comic)
@@ -15,7 +15,7 @@
         </a>
         @endforeach
     </div>
-    <button class="border-0 text-white bg-primary px-5 py-2 fw-bolder mb-3 mx-auto ">LOAD MORE</button>
+    <button class="border-0 text-white bg-primary px-5 py-2 fw-bolder mb-3 mx-auto">LOAD MORE</button>
 </div>
 
 @endsection
