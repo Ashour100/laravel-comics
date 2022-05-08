@@ -15,7 +15,7 @@
         </a>
         @endforeach
     </div>
-    <button class="border-0 text-white bg-primary px-5 py-2 fw-bolder mb-3 mx-auto">LOAD MORE</button>
+    <button class="border-0 text-white bg-primary px-5 py-2 fw-bolder mb-3">LOAD MORE</button>
 </div>
 
 @endsection

@@ -31,42 +31,76 @@
         <a href=""><img src="{{asset('images/addddddd.jpg')}}" alt="Ad"></a>
     </div>
 </div>
-<div class="bottom-comic-section d-flex justify-content-between gap-3 w-50 mx-auto ">
-    <div class="left w-50">
-        <h3>Talent</h3>
-        <hr>
-        <span>Art by:</span>
-        <span>
-            @foreach ($comic['artists'] as $name)
-            <a href="#">{{$name}}</a>
-            @if (!$loop->last)
-            ,
-            @endif
-        @endforeach
-        </span>
-        <hr>
-        <span>Written by:</span>
-        <span>
-            @foreach ($comic['writers'] as $name)
-                <a href="#">{{$name}}</a>
-                @if (!$loop->last)
-                ,
-                @endif
-            @endforeach
-        </span>
-    </div>
-    <div class="right w-50">
-        <h3>Specs</h3>
-        <hr>
-        <span>Series:</span>
-        <span>{{$comic['series']}}</span>
-        <hr>
-        <span> U.S. Price:</span>
-        <span>{{$comic['price']}}</span>
-        <hr>
-        <span>On Sale Date:</span>
-        <span>{{$comic['sale_date']}}</span>
+<div class="bottom-comic-section mt-5 pb-4">
+    <div class="contentWrapper d-flex justify-content-between gap-4 mx-auto pt-4 pb-5">
+        <div class="left w-50">
+            <h5>Talent</h5>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Art by:</span>
+                </div>
+                <div class="details">
+                    <span>
+                        @foreach ($comic['artists'] as $name)
+                        <a href="#">{{$name}}</a>
+                        @if (!$loop->last)
+                        ,
+                        @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Written by:</span>
+                </div>
+                <div class="details">
+                    <span>
+                        @foreach ($comic['writers'] as $name)
+                        <a href="#">{{$name}}</a>
+                        @if (!$loop->last)
+                        ,
+                        @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="right w-50">
+            <h5>Specs</h5>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Series:</span>
+                </div>
+                <div class="details">
+                    <a class="text-uppercase">{{$comic['series']}}</a>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span> U.S. Price:</span>
+                </div>
+                <div class="details">
+                    <span>{{$comic['price']}}</span>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>On Sale Date:</span>
+                </div>
+                <div class="details">
+                    <span>{{$comic['sale_date']}}</span>
+                </div>
+            </div>
+            <hr>
+        </div>
     </div>
 </div>
-@dump($comic)
+
 @endsection

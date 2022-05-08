@@ -11397,6 +11397,34 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.bottom-comic-section {
+  background-color: #f6f6f6;
+}
+.bottom-comic-section .contentWrapper {
+  width: 54vw;
+}
+.bottom-comic-section .contentWrapper h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #264667;
+}
+.bottom-comic-section .contentWrapper span {
+  font-size: small;
+}
+.bottom-comic-section .contentWrapper hr {
+  margin: 0.3rem 0;
+}
+.bottom-comic-section .contentWrapper .tag {
+  width: 25%;
+}
+.bottom-comic-section .contentWrapper .details {
+  width: 70%;
+  font-size: small;
+}
+.bottom-comic-section .contentWrapper .details a {
+  text-decoration: none;
+}
+
 .comics {
   background-color: #1c1c1c;
   color: white;
@@ -11435,6 +11463,7 @@ textarea.form-control-lg {
 }
 .FooterTop .icon {
   gap: 1rem;
+  cursor: pointer;
 }
 .FooterTop .icon #locator {
   width: 1.5rem;
@@ -11471,6 +11500,7 @@ textarea.form-control-lg {
 }
 .FooterMiddle .left li {
   list-style: none;
+  cursor: pointer;
 }
 .FooterMiddle .left .shop-list {
   position: relative;
