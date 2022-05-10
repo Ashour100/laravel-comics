@@ -19380,6 +19380,14 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var loadB = document.getElementById('load');
+var moreContainer = document.getElementById('moreContainer');
+loadB.addEventListener("click", function () {
+  loadB.classList.add('d-none');
+  moreContainer.classList.remove('d-none');
+});
+console.warn('It seems to work');
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
